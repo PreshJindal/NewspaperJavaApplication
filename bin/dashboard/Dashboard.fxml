@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="463.0" minWidth="671.0" prefHeight="463.0" prefWidth="711.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="dashboard.DashBoardController">
+   <children>
+      <ImageView blendMode="OVERLAY" fitHeight="534.0" fitWidth="781.0" layoutX="-4.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1593189077-2974.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="123.0" layoutY="7.0" text="PRESH'S NEWS AGENCY" textFill="#c90202">
+         <font>
+            <Font name="Consolas" size="45.0" />
+         </font>
+      </Label>
+      <Button layoutX="25.0" layoutY="215.0" mnemonicParsing="false" onAction="#openPaperMaster" text="PAPER MASTER">
+         <font>
+            <Font name="Alef Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="185.0" layoutY="217.0" mnemonicParsing="false" onAction="#openHawkerManager" text="HAWKER MANAGER">
+         <font>
+            <Font name="Alef Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="363.0" layoutY="217.0" mnemonicParsing="false" onAction="#openCustomerPanel" text="CUSTOMER PANEL">
+         <font>
+            <Font name="Alef Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="126.0" fitWidth="118.0" layoutX="3.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pngwing.com%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="132.0" fitWidth="140.0" layoutX="579.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pngwing.com%20(1).png" />
+         </image>
+      </ImageView>
+      <Line endX="354.79998779296875" layoutX="230.0" layoutY="68.0" startX="-100.0" />
+      <ImageView fitHeight="132.0" fitWidth="118.0" layoutX="29.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@newspaper.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="132.0" fitWidth="98.0" layoutX="214.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@clipart227001.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="540.0" layoutY="217.0" mnemonicParsing="false" onAction="#openBillGenerator" text="BILL GENERATOR">
+         <font>
+            <Font name="Alef Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="195.0" layoutY="393.0" mnemonicParsing="false" onAction="#openBillCollector" text="BILL COLLECTOR">
+         <font>
+            <Font name="Alef Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="26.0" layoutY="393.0" mnemonicParsing="false" onAction="#openHawkerView" text="HAWKER VIEW ">
+         <font>
+            <Font name="Alef Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="388.0" layoutY="393.0" mnemonicParsing="false" onAction="#openBillTable" text="BILL TABLE">
+         <font>
+            <Font name="Alef Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="536.0" layoutY="393.0" mnemonicParsing="false" onAction="#openCustomerTable" text="CUSTOMER TABLE">
+         <font>
+            <Font name="Alef Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="132.0" fitWidth="82.0" layoutX="399.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@475-4750600_man-icon-clipart-customer-service-clip-art-hd.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="127.0" fitWidth="154.0" layoutX="532.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@496931.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="508.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="147.0" fitWidth="200.0" layoutX="-6.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@kisspng-paperboy-newspaper-drawing-5af94ed8d118a8.4978448215262880888565.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="199.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@transparent-business-and-office-icon-bill-icon-invoice-icon-5fb2d67edf6f86.5507833716055558389152.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="328.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@transparent-business-icon-finances-icon-money-icon-5fac913eac7812.4337119216051448947064.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

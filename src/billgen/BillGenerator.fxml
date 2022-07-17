@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="600.0" minWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="billgen.BillGeneratorController">
+   <children>
+      <ImageView blendMode="OVERLAY" disable="true" fitHeight="338.0" fitWidth="401.0" layoutX="-1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@newspaper-advertising-service-500x500.png" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="OVERLAY" disable="true" fitHeight="338.0" fitWidth="401.0" layoutX="-1.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@newspaper-advertising-service-500x500.png" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="OVERLAY" disable="true" fitHeight="338.0" fitWidth="401.0" layoutX="-1.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@newspaper-advertising-service-500x500.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="75.0" layoutY="1.0" text="BILL GENERATOR">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="75.0" fitWidth="71.0" layoutX="2.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bill.png" />
+         </image>
+      </ImageView>
+      <Line endX="222.60000610351562" layoutX="179.0" layoutY="62.0" startX="-100.0" />
+      <Label layoutX="9.0" layoutY="105.0" text="MOBILE :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboMobNo" editable="true" layoutX="85.0" layoutY="104.0" prefHeight="26.0" prefWidth="200.0" promptText="Choose/Enter Mobile Number" />
+      <Button fx:id="btndoFetchDos" layoutX="273.0" layoutY="154.0" mnemonicParsing="false" onAction="#DoFetchDoS" text="FETCH DATE OF START">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Label layoutX="7.0" layoutY="153.0" text="DATE OF START :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="DateDoS" editable="false" layoutX="140.0" layoutY="152.0" prefHeight="26.0" prefWidth="120.0" promptText="Fetched Date " />
+      <DatePicker fx:id="DateUtD" layoutX="107.0" layoutY="202.0" onAction="#DoTotalPrice" prefHeight="26.0" prefWidth="114.0" promptText="Select Date" />
+      <Label layoutX="9.0" layoutY="202.0" prefHeight="26.0" prefWidth="98.0" text="UPTO DATE :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTotPrice" layoutX="123.0" layoutY="262.0" prefHeight="26.0" prefWidth="164.0" promptText="Per Day Price Appears Here" />
+      <Label layoutX="11.0" layoutY="261.0" text="TOTAL PRICE :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnDoGenTotBill" layoutX="114.0" layoutY="314.0" mnemonicParsing="false" onAction="#DoGenTotalBill" prefHeight="50.0" prefWidth="185.0" text="GENERATE TOTAL BILL">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="11.0" layoutY="396.0" prefHeight="37.0" prefWidth="186.0" text="AMOUNT TO BE PAYED :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAmountPayable" layoutX="199.0" layoutY="402.0" prefHeight="26.0" prefWidth="186.0" promptText="Total Amount Payable " />
+      <Button fx:id="btnSave" layoutX="142.0" layoutY="474.0" mnemonicParsing="false" onAction="#DoSave" prefHeight="27.0" prefWidth="120.0" text="SAVE IN TABLE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <CubicCurve controlX1="-50.0" controlX2="50.0" controlY1="-100.0" controlY2="100.0" endX="193.00003051757812" fill="#d2eaff" layoutX="207.0" layoutY="556.0" startX="-208.00003051757812" stroke="BLACK" />
+      <Label layoutX="69.0" layoutY="535.0" text="SERVING">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="284.0" layoutY="555.0" text="PEOPLE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

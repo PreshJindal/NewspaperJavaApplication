@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="416.0" minWidth="400.0" prefHeight="416.0" prefWidth="400.0" style="-fx-background-color: grey;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="login.LoginPageController">
+   <children>
+      <Label layoutX="54.0" layoutY="137.0" text="Username :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsername" layoutX="175.0" layoutY="140.0" promptText="Login ID">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <PasswordField fx:id="txtPassword" layoutX="176.0" layoutY="238.0" promptText="Password">
+         <effect>
+            <DropShadow />
+         </effect>
+      </PasswordField>
+      <Label layoutX="54.0" layoutY="235.0" text="Password :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLogin" layoutX="96.0" layoutY="352.0" mnemonicParsing="false" onAction="#DoLogin" text="LOGIN">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="btnNewUser" layoutX="212.0" layoutY="352.0" mnemonicParsing="false" onAction="#AlertNewUser" text="NEW USER?">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Label layoutX="33.0" text="NEWS AGENCY" textFill="#6e5050">
+         <font>
+            <Font size="51.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Line endX="276.4000244140625" layoutX="122.0" layoutY="74.0" startX="-122.0" />
+   </children>
+</AnchorPane>

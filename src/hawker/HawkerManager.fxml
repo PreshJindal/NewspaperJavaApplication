@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="500.0" minWidth="400.0" prefHeight="791.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hawker.HawkerManagerController">
+   <children>
+      <ImageView blendMode="OVERLAY" fitHeight="281.0" fitWidth="415.0" layoutX="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@newws.jpg" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="OVERLAY" fitHeight="277.0" fitWidth="409.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@newws.jpg" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="OVERLAY" fitHeight="273.0" fitWidth="415.0" layoutY="544.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@newws.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="104.0" layoutY="-11.0" text="HAWKER">
+         <font>
+            <Font name="Bell MT" size="65.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="50.0" text="MANAGER">
+         <font>
+            <Font name="Bell MT" size="65.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="112.0" fitWidth="108.0" layoutX="17.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hawkerr.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="33.0" layoutY="164.0" text="NAME :">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboName" editable="true" layoutX="108.0" layoutY="166.0" prefHeight="26.0" prefWidth="224.0" promptText="Employee Name">
+         <effect>
+            <DropShadow />
+         </effect></ComboBox>
+      <Button fx:id="btnFetch" layoutX="341.0" layoutY="166.0" mnemonicParsing="false" onAction="#DoFetch" text="FETCH" />
+      <Separator layoutX="2.0" layoutY="145.0" prefHeight="2.0" prefWidth="409.0" />
+      <Label layoutX="8.0" layoutY="218.0" text="ADDRESS :">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtAddress" layoutX="108.0" layoutY="218.0" prefHeight="76.0" prefWidth="283.0" promptText="Employee Address">
+         <effect>
+            <DropShadow />
+         </effect></TextArea>
+      <Label layoutX="7.0" layoutY="324.0" prefHeight="28.0" prefWidth="83.0" text="CONTACT :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtContact" layoutX="88.0" layoutY="326.0" prefHeight="26.0" prefWidth="117.0" promptText="Mobile Number">
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+      <Label layoutX="212.0" layoutY="326.0" text="AREA">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboArea" editable="true" layoutX="262.0" layoutY="326.0" onAction="#SetSelArea" prefHeight="26.0" prefWidth="150.0" promptText="Areas Serving in">
+         <effect>
+            <DropShadow />
+         </effect></ComboBox>
+      <Label layoutX="4.0" layoutY="384.0" text="SELECTED AREAS :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtArea" editable="false" layoutX="151.0" layoutY="377.0" prefHeight="112.0" prefWidth="258.0" promptText="All the areas serving in will appear here">
+         <effect>
+            <DropShadow />
+         </effect></TextArea>
+      <ImageView fx:id="imageHawker" fitHeight="102.0" fitWidth="134.0" layoutX="24.0" layoutY="562.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@avatardefault_92824.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="BtnBrowse" layoutX="67.0" layoutY="684.0" mnemonicParsing="false" onAction="#DoBrowsePic" text="BROWSE" />
+      <Label layoutX="190.0" layoutY="502.0" text="AADHAAR CARD NUMBER :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAadhaar" layoutX="192.0" layoutY="531.0" prefHeight="26.0" prefWidth="202.0" promptText="Employee AADHAAR Number">
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+      <Button fx:id="btnRegister" layoutX="194.0" layoutY="588.0" mnemonicParsing="false" onAction="#DoRegister" text="REGISTER">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="BtnChange" layoutX="244.0" layoutY="650.0" mnemonicParsing="false" onAction="#DoChange" text="CHANGE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="BtnLeft" layoutX="315.0" layoutY="588.0" mnemonicParsing="false" onAction="#DoDelete" text="LEFT">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="112.0" fitWidth="128.0" layoutX="14.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1280px-Aadhaar_Logo.svg.png" />
+         </image>
+      </ImageView>
+      <CubicCurve controlX1="-46.399993896484375" controlX2="46.399993896484375" controlY1="-88.39996337890625" controlY2="107.79998779296875" endX="193.99996948242188" endY="10.0" fill="#c1cfdc" layoutX="223.0" layoutY="740.0" startX="-223.00003051757812" startY="10.0" stroke="BLACK" />
+      <Label layoutX="76.0" layoutY="730.0" text="SERVING">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="299.0" layoutY="749.0" text="PEOPLE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

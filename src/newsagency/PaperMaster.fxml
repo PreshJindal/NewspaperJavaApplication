@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="493.0" minWidth="412.0" prefHeight="621.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newsagency.PaperMasterController">
+   <children>
+      <ImageView blendMode="OVERLAY" disable="true" fitHeight="629.0" fitWidth="416.0" layoutX="-1.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@nnews.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="20.0" layoutY="193.0" text="Select PAPER :">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboPapers" editable="true" layoutX="169.0" layoutY="196.0" onAction="#SetRate" prefHeight="26.0" prefWidth="228.0" promptText="NewsPapers">
+         <effect>
+            <DropShadow />
+         </effect>
+      </ComboBox>
+      <Label layoutX="19.0" layoutY="293.0" text="NewsPaper RATE :">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRate" layoutX="213.0" layoutY="296.0" prefHeight="26.0" prefWidth="179.0" promptText="Monthly Charges">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <Button fx:id="BtnSave" layoutX="70.0" layoutY="474.0" mnemonicParsing="false" onAction="#DoSave" text="SAVE" />
+      <Button fx:id="BtnUpdate" layoutX="188.0" layoutY="475.0" mnemonicParsing="false" onAction="#DoUpdate" text="UPDATE" />
+      <Button fx:id="BtnRemove" layoutX="304.0" layoutY="475.0" mnemonicParsing="false" onAction="#DoRemove" text="REMOVE" />
+      <ImageView fitHeight="128.0" fitWidth="187.0" layoutX="7.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@177-1777219_means-of-communication-newspaper-hd-png-download.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="203.0" layoutY="25.0" text="PAPER">
+         <font>
+            <Font name="Old English Text MT" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="181.0" layoutY="85.0" text="MASTER">
+         <font>
+            <Font name="Old English Text MT" size="45.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="83.0" fitWidth="335.0" layoutX="166.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@SEPE.png" />
+         </image>
+      </ImageView>
+      <Line endX="-61.29998779296875" endY="-173.8000030517578" layoutX="70.0" layoutY="182.0" startX="-62.699974060058594" startY="434.20709228515625" />
+      <Line endX="281.9999694824219" endY="-7.399996757507324" layoutX="129.0" layoutY="14.0" startX="-120.39998626708984" startY="-7.399996757507324" />
+      <Line endX="75.5" endY="-148.89999389648438" layoutX="336.0" layoutY="155.0" startX="75.29287719726562" startY="460.20709228515625" />
+      <Line endX="296.7928771972656" endY="3.70709228515625" layoutX="114.0" layoutY="612.0" startX="-106.1999740600586" startY="3.70709228515625" />
+      <CubicCurve controlX1="179.19998168945312" controlX2="50.0" controlY1="-182.0" controlY2="100.0" endX="303.5857849121094" endY="-42.86749267578125" fill="#e1e1e1" layoutX="107.0" layoutY="607.0" startX="-97.5928726196289" startY="-42.86749267578125" stroke="BLACK" />
+      <Label layoutX="86.0" layoutY="534.0" text="SERVING">
+         <font>
+            <Font name="High Tower Text" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="259.0" layoutY="566.0" text="PEOPLE">
+         <font>
+            <Font name="High Tower Text" size="21.0" />
+         </font>
+      </Label>
+      <Separator layoutX="7.0" layoutY="153.0" prefHeight="10.0" prefWidth="403.0" />
+   </children>
+</AnchorPane>
